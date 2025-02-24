@@ -34,6 +34,6 @@ public class AudioSpectrum : MonoBehaviour
         //smooth it out
         audioAmp = Mathf.Lerp(audioAmp, newAudioAmp, smoothingFactor);
 
-        lighty.intensity = audioAmp;
+        lighty.intensity = audioAmp*10f;
     }
 }
